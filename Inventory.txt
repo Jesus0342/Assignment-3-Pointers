@@ -1,0 +1,15 @@
+Nike basketball shoes
+159.99
+52
+Under Armour T-shirt
+25.99
+23
+Brooks running shoes
+119.44
+8
+Asics running shoes
+165.88
+21
+Under Armour shorts
+45.77
+88
