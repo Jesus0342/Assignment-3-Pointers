@@ -169,10 +169,27 @@ void Equipment::SetQuantity(int numPurchased, Equipment customerOrder[], int ind
 	customerOrder[index].quantity = numPurchased;
 }
 
+/******************************************************************************
+ * UpdateQuantity
+ * ----------------------------------------------------------------------------
+ * This function updates the quantity of an item that is available in the main 
+ * inventory once the user has entered the quantity they would like to purchase.
+ * ----------------------------------------------------------------------------
+ * PRE-CONDITIONS:
+ *     numPurchased - Quantity of item purchased must be previously defined.
+ *     searchItem   - Name of items to be purchased must be previously defined.
+ *     inventory    - Array holding the quantities of each item available must
+ *                    be previously defined.
+ *
+ * POST-CONDITIONS:
+ *     Updates the quantity of an item that is available in the main inventory.
+ *****************************************************************************/
 void Equipment::UpdateQuantity(int numPurchased, string searchItem, Equipment inventory[])
 {
 	int index = 0;
 
+	// Finds the index of the item to be purchased so that the quantity can
+	// be subtracted from the correct item.
 	while(searchItem != inventory[index].name)
 	{
 		index++;
