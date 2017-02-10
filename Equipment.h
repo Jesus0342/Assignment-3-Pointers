@@ -16,10 +16,10 @@ using namespace std;
 
 namespace receipt
 {
-	#define NAME 27
-	#define	COST 7
+	#define NAME     27
+	#define	COST     7
 	#define QUANTITY 8
-	#define QTY 4
+	#define QTY      4
 	#define TAX_RATE .0825
 }
 
@@ -33,13 +33,14 @@ class Equipment
 		Equipment();
 		~Equipment();
 		void InitializeInventory(Equipment inventory[]);
+		void PrintInventory(Equipment inventory[]);
 		bool FindItem(string searchItem, Equipment inventory[]);
 		void SetName(string equipName, Equipment customerOrder[], int index);
-		void SetCost(string equipName, Equipment inventory[], Equipment customerOrder[], int index);
+		void SetCost(string equipName, Equipment inventory[],
+					 Equipment customerOrder[], int index);
 		void SetQuantity(int numPurchased, Equipment customerOrder[], int index);
 		void UpdateQuantity(int numPurchased, string searchItem, Equipment inventory[]);
 		void PrintReceipt(Equipment customerOrder[], int *&numItems);
-		void PrintInventory(Equipment inventory[]);
 
 	private:
 		string name;

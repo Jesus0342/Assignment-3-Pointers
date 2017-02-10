@@ -6,7 +6,6 @@
 *******************************************
 
        ----- Initial Inventory -----
-
 Name of Equipment           Cost   Quantity
 -----------------          ------- --------
 Nike basketball shoes      $159.99    52
@@ -30,9 +29,8 @@ Enter the name of the item #4: Asics running shoes
 Enter the quantity to be purchased: 1
 
         ----- RECEIPT -----
-
 QTY ITEM                        COST   
---- ----                       -----   
+--- ----                       ------  
 4   Nike basketball shoes      $159.99 
 3   Under Armour T-shirt       $25.99  
 4   Under Armour shorts        $45.77  
@@ -43,7 +41,6 @@ TAX:      $88.02
 TOTAL:    $1154.91
 
         ----- Final inventory -----
-
 Name of Equipment           Cost   Quantity
 -----------------          ------- --------
 Nike basketball shoes      $159.99    48
@@ -51,3 +48,4 @@ Under Armour T-shirt       $25.99     20
 Brooks running shoes       $119.44     8
 Asics running shoes        $165.88    20
 Under Armour shorts        $45.77     84
+
